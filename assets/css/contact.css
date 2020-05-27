@@ -1,0 +1,127 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
+
+* {
+   margin: 0;
+   padding: 0;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+body {
+   font-family: 'Source Sans Pro', sans-serif;
+   background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
+}
+::-webkit-input-placeholder {
+   color: #777;
+}
+:-moz-placeholder {
+   /* Firefox 18- */
+   color: #777;
+}
+::-moz-placeholder {
+   /* Firefox 19+ */
+   color: #777;
+}
+:-ms-input-placeholder {
+   color: #777;
+}
+.contact-form {
+   position: relative;
+   width: 100vw;
+   height: 100vh;
+   padding: 1em;
+   margin: auto;
+   /* display: grid; */
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+}
+.contact-form h2 {
+   text-align: center;
+   /* text-transform: uppercase; */
+   color: #f55;
+   font-family: 'Source Sans Pro', sans-serif;
+   font-size: 1.2rem;
+}
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea {
+   display: block;
+   padding: 10px;
+   margin: 10px auto;
+   width: 100%;
+   font-size: 18px;
+   color: #777;
+   border: 1px solid #ccc;
+   font-family: 'Source Sans Pro', sans-serif;
+}
+#contact textarea {
+   font-size: 16px;
+   font-family: 'Source Sans Pro', sans-serif;
+}
+#contact input:hover,
+#contact textarea:hover {
+   border: 1px solid #888;
+}
+#contact input:focus,
+#contact textarea:focus {
+   border: 1px solid #777;
+}
+#contact textarea {
+   max-width: 100%;
+   min-width: 100%;
+   max-height: 280px;
+   min-height: 280px;
+   resize: none;
+}
+#contact .send-button {
+   text-align: center;
+}
+#contact .send-button button[type="submit"] {
+   color: #fff;
+   background: #e74c3c;
+   border: none;
+   width: 100%;
+   padding: 10px 0;
+   font-size: 20px;
+   text-transform: uppercase;
+   transition: 0.5s all ease;
+   cursor: pointer;
+}
+#contact .send-button button[type="submit"]:hover {
+   background: #c0392b;
+}
+#contact .send-button button[type="submit"]:focus {
+   position: relative;
+   top: 2px;
+}
+/*######################################\*
+              Responsividade
+\*######################################*/
+@media screen and (min-width: 640px) {
+   .contact-form {
+      width: 600px;
+   }
+   #contact textarea {
+      max-width: 98%;
+      min-width: 98%;
+      min-height: 155px;
+      margin-right: 0;
+   }
+   #contact .right,
+   #contact .left {
+      display: block;
+   }
+   #contact .right {
+      float: right;
+      width: 50%;
+   }
+   #contact .left {
+      float: left;
+      width: 50%;
+   }
+   .cl {
+      clear: both;
+   }
+}

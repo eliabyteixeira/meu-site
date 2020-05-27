@@ -1,0 +1,216 @@
+* {
+   overflow: hidden;
+}
+@keyframes blink {
+   0% { opacity: 0; }
+   30% { opacity: 0; }
+   50% { opacity: 1; }
+   80% { opacity: 1; }
+   100% { opacity: 0; }
+}
+body {
+   background-color: #1a1a1a;
+   color: rgb(0, 207, 0);
+   text-rendering: optimizeLegibility;
+   font-family: monospace;
+   user-select: none;
+}
+.hidden {
+   display: none;
+}
+.password {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 1.8rem;
+   letter-spacing: 3px;
+   color: cyan;
+   padding: 0.5rem;
+   border: solid 1px #eee;
+}
+.granted {
+   position: absolute;
+   top: 70%;
+   left: 50%;
+   color: #0ddf4c;
+   transform: translate(-50%, -50%);
+   font-size: 1.8rem;
+   text-align: center;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+}
+.not-granted {
+   position: absolute;
+   top: 70%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 1.8rem;
+   color: #df0d0d;
+   text-align: center;
+   align-items: center;
+   align-content: center;
+   justify-content: center;
+}
+.info {
+   position: absolute;
+   top: 0;
+   left: 0;
+}
+.info {
+   margin: 1.5rem 0.5rem;
+}
+.info h3 {
+   font-size: 1rem;
+}
+.info p {
+   position: relative;
+   text-align: left;
+   font-size: 1rem; 
+   font-family: monospace;
+   white-space: nowrap;
+   width: 0;
+}
+.button {
+   padding: 0.4rem;
+   letter-spacing: 2px;
+   cursor: pointer;
+   text-align: center;
+}
+.rerun {
+   background-color: #111;
+   border: solid 1px rgb(248, 233, 19);
+   position: absolute;
+   top: 90%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 22px;
+}
+.access {
+   position: absolute;
+   top: 90%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   background-color: #111;
+   border: solid 1px rgb(0, 242, 250);
+   color: rgb(0, 242, 250);
+   font-size: 22px;
+}
+.start {
+   background-color: #111;
+   border: solid 1px rgb(248, 233, 19);
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   font-size: 1.8rem;
+   opacity: 0;
+   -webkit-animation: blink .5s 6.5s 1 forwards;
+   -moz-animation: blink .5s 6.5s 1 forwards;
+   -o-animation: blink .5s 6.5s 1 forwards;
+   animation: btstart .5s 4.7s 1 forwards;  
+}
+.blink {
+   animation: blink 0.4s steps(1, start) infinite alternate;
+}
+.line1 {
+   -webkit-animation: type 1s 0.5s steps(20, end) forwards;
+   -moz-animation: type 1s 0.5s steps(20, end) forwards;
+   -o-animation: type 1s 0.5s steps(20, end) forwards;
+   animation: type 1s 0.5s steps(20, end) forwards;
+}
+.cursor1 {
+   -webkit-animation: blink 0.5s 1s 2 forwards;
+   -moz-animation: blink 0.5s 1s 2 forwards;
+   -o-animation: blink 0.5s 1s 2 forwards;
+   animation: blink 0.5s 1s 2 forwards;
+}
+.line2 {
+   -webkit-animation: type 1s 2s steps(20, end) forwards;
+   -moz-animation: type 1s 2s steps(20, end) forwards;
+   -o-animation: type 1s 2s steps(20, end) forwards;
+   animation: type 1s 2s steps(20, end) forwards;
+}
+.cursor2 {
+   -webkit-animation: blink .5s 2.5s 2 forwards;
+   -moz-animation: blink .5s 2.5s 2 forwards;
+   -o-animation: blink .5s 2.5s 2 forwards;
+   animation: blink .5s 2.5s 2 forwards;
+}
+.line3 {
+   -webkit-animation: type 1s 3.5s steps(20, end) forwards;
+   -moz-animation: type 1s 3.5s steps(20, end) forwards;
+   -o-animation: type 1s 3.5s steps(20, end) forwards;
+   animation: type 1s 3.5s steps(20, end) forwards;
+}
+.cursor3 {
+   -webkit-animation: blink .5s 4s 2 forwards;
+   -moz-animation: blink .5s 4s 2 forwards;
+   -o-animation: blink .5s 4s 2 forwards;
+   animation: blink .5s 4s 2 forwards;
+}
+.line4 {
+   color: rgb(248, 233, 19);
+   -webkit-animation: type 0.5s .2s steps(20, end) forwards;
+   -moz-animation: type 0.5s .2s steps(20, end) forwards;
+   -o-animation: type 0.5s .2s steps(20, end) forwards;
+   animation: type 0.5s .2s steps(20, end) forwards;
+}
+@-webkit-keyframes type {
+   to { 
+      word-wrap: normal;
+      width: 100vw; 
+   }
+}
+@-moz-keyframes type {
+   to { 
+      width: 100vw;  
+      word-wrap: normal;
+   }
+}
+@-o-keyframes type {
+   to { 
+      word-wrap: normal;
+      width: 100vw; 
+   }
+}
+@keyframes type {
+   to { 
+      word-wrap: normal;
+      width: 100vw; 
+   }
+}
+@keyframes btstart {
+   to { opacity: 1; }
+}
+
+
+/* @-webkit-keyframes blink {
+   0% { opacity: 0; }
+   40% { opacity: 0; }
+   50% { opacity: 1; }
+   90% { opacity: 1; }
+   100% { opacity: 0; }
+}
+@-moz-keyframes blink {
+   0% { opacity: 0; }
+   40% { opacity: 0; }
+   50% { opacity: 1; }
+   90% { opacity: 1; }
+   100% { opacity: 0; }
+}
+@-o-keyframes blink {
+   0% { opacity: 0; }
+   40% { opacity: 0; }
+   50% { opacity: 1; }
+   90% { opacity: 1; }
+   100% { opacity: 0; }
+}
+@keyframes blink {
+   0% { opacity: 0; }
+   40% { opacity: 0; }
+   50% { opacity: 1; }
+   90% { opacity: 1; }
+   100% { opacity: 0; }
+} */
