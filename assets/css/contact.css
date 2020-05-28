@@ -1,6 +1,4 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans);
-@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro);
-
+@import url("https://fonts.googleapis.com/css?family=Lato:300,400|Poppins:300,400,800&display=swap");
 * {
    margin: 0;
    padding: 0;
@@ -9,7 +7,7 @@
    box-sizing: border-box;
 }
 body {
-   font-family: 'Source Sans Pro', sans-serif;
+   font-family: "Lato", sans-serif;
    background: radial-gradient(ellipse at top, #1b2735 0%, #090a0f 100%);
 }
 ::-webkit-input-placeholder {
@@ -39,10 +37,11 @@ body {
 }
 .contact-form h2 {
    text-align: center;
-   /* text-transform: uppercase; */
-   color: #f55;
-   font-family: 'Source Sans Pro', sans-serif;
-   font-size: 1.2rem;
+   text-transform: uppercase;
+   color: #fff;
+   font-family: "Lato", sans-serif;
+   font-size: 1em;
+   font-weight: bold;
 }
 #contact input[type="text"],
 #contact input[type="email"],
@@ -51,14 +50,14 @@ body {
    padding: 10px;
    margin: 10px auto;
    width: 100%;
-   font-size: 18px;
+   font-size: 1rem;
    color: #777;
    border: 1px solid #ccc;
-   font-family: 'Source Sans Pro', sans-serif;
+   font-family: "Lato", sans-serif;
 }
 #contact textarea {
    font-size: 16px;
-   font-family: 'Source Sans Pro', sans-serif;
+   font-family: "Lato", sans-serif;
 }
 #contact input:hover,
 #contact textarea:hover {
@@ -80,7 +79,7 @@ body {
 }
 #contact .send-button button[type="submit"] {
    color: #fff;
-   background: #e74c3c;
+   background: #ffa801;
    border: none;
    width: 100%;
    padding: 10px 0;
@@ -90,7 +89,7 @@ body {
    cursor: pointer;
 }
 #contact .send-button button[type="submit"]:hover {
-   background: #c0392b;
+   background: #ffa801;
 }
 #contact .send-button button[type="submit"]:focus {
    position: relative;
